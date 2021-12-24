@@ -1,6 +1,16 @@
 const numberOfProblems = 3;
 
 
+function renderTable(inputs, outputs, problemNumber, userFunction) {
+    for (let i = 1; i <= inputs.length; i++) {
+        document.getElementById(`problem${problemNumber}-test-input-${i}`).innerText = `(${inputs[i - 1]})`;
+        const userAnswer = userFunction(...inputs[i - 1]);
+        // document.getElementById(`problem${problemNumber}-test-output-${i}`).innerText = userAnswer;
+        document.getElementById(`problem${problemNumber}-test-outcome-${i}`).innerText = outputs[i - 1] === userAnswer ? "✅" : `❌ Expected: ${outputs[i - 1]} but got: ${userAnswer}`;
+    }
+
+}
+
 function problem1() {
     const problemNumber = 1;
     let inputs = [
@@ -11,12 +21,7 @@ function problem1() {
 
     let outputs = inputs.map(input => 0.5 * input[0] * input[1] ** 2 * input[2] * input[3]);
 
-    for (let i = 1; i <= inputs.length; i++) {
-        document.getElementById(`problem${problemNumber}-test-input-${i}`).innerText = `rho= ${inputs[i - 1][0]}, v= ${inputs[i - 1][1]}, s= ${inputs[i - 1][2]}, cl= ${inputs[i - 1][3]}`;
-        const userAnswer = calculateLift(inputs[i - 1][0], inputs[i - 1][1], inputs[i - 1][2], inputs[i - 1][3]);
-        document.getElementById(`problem${problemNumber}-test-output-${i}`).innerText = userAnswer;
-        document.getElementById(`problem${problemNumber}-test-outcome-${i}`).innerText = outputs[i - 1] === userAnswer ? "✅" : `❌ Expected: ${outputs[i - 1]}`;
-    }
+    renderTable(inputs, outputs, problemNumber, calculateLift);
 }
 
 function problem2() {
@@ -29,12 +34,8 @@ function problem2() {
 
     let outputs = inputs.map(input => 0.5 * input[0] * input[1] ** 2 * input[2] * input[3]);
 
-    for (let i = 1; i <= inputs.length; i++) {
-        document.getElementById(`problem${problemNumber}-test-input-${i}`).innerText = `rho= ${inputs[i - 1][0]}, v= ${inputs[i - 1][1]}, s= ${inputs[i - 1][2]}, cl= ${inputs[i - 1][3]}`;
-        const userAnswer = calculateDrag(inputs[i - 1][0], inputs[i - 1][1], inputs[i - 1][2], inputs[i - 1][3]);
-        document.getElementById(`problem${problemNumber}-test-output-${i}`).innerText = userAnswer;
-        document.getElementById(`problem${problemNumber}-test-outcome-${i}`).innerText = outputs[i - 1] === userAnswer ? "✅" : `❌ Expected: ${outputs[i - 1]}`;
-    }
+    renderTable(inputs, outputs, problemNumber, calculateDrag);
+
 }
 
 function problem3() {
@@ -47,14 +48,8 @@ function problem3() {
 
     let outputs = inputs.map(input => Math.sqrt(2 * input[0] * input[1] / (input[4] * input[2] * input[3])));
 
-    for (let i = 1; i <= inputs.length; i++) {
-        document.getElementById(`problem${problemNumber}-test-input-${i}`).innerText = `m= ${inputs[i - 1][0]}, g= ${inputs[i - 1][1]}, s= ${inputs[i - 1][2]}, cl= ${inputs[i - 1][3]}, rho= ${inputs[i - 1][4]}`;
-        const userAnswer = calculateStallSpeed(inputs[i - 1][0], inputs[i - 1][1], inputs[i - 1][2], inputs[i - 1][3], inputs[i - 1][4]);
-        document.getElementById(`problem${problemNumber}-test-output-${i}`).innerText = userAnswer;
-        document.getElementById(`problem${problemNumber}-test-outcome-${i}`).innerText = outputs[i - 1] === userAnswer ? "✅" : `❌ Expected: ${outputs[i - 1]}`;
-    }
+    renderTable(inputs, outputs, problemNumber, calculateStallSpeed);
 }
-
 
 function main() {
     problem1();

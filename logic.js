@@ -22,4 +22,3 @@ function calculateStallSpeed(m, g, s, cl, rho) {
 
 
 }
-
