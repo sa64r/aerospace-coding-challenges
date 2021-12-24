@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/icons/plane.ico" />
+    <title>SA64R's Aerospace Coding Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section class="bg-dark">
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <h1 class="heading">👨‍🚀 SA64R's Aerospace Coding Challenge - JavaScript</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM 1 SECTION -->
+    <section>
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <h2>Problem 1: Calculate Lift</h2>
+                    <p>In the file <b>logic.js</b> file, complete the function 'calculateLift' so that it returns the
+                        lift produced by an aircraft given the air density (rho), airspeed (v), plan form area of the
+                        wing (s)
+                        and the
+                        coefficient of lift (cl). </p>
+                    <table class="table">
+                        <tr>
+                            <th>Test Number</th>
+                            <th>Input</th>
+                            <th>Your Output</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="problem1-test-input-1">rho= , v= , s= , cl= </td>
+                            <td id="problem1-test-output-1">12</td>
+                            <td id="problem1-test-outcome-1">✅</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="problem1-test-input-2">rho= , v= , s= , cl= </td>
+                            <td id="problem1-test-output-2">34</td>
+                            <td id="problem1-test-outcome-2">✅</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="problem1-test-input-3">rho= , v= , s= , cl= </td>
+                            <td id="problem1-test-output-3">20</td>
+                            <td id="problem1-test-outcome-3">✅</td>
+                        </tr>
+                    </table>
+                    <button id="problem1-test-btn" class="btn btn-success">Test Problem 1</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM 2 SECTION -->
+    <section>
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <h2>Problem 2: Calculate Drag</h2>
+                    <p>In the file <b>logic.js</b> file, complete the function 'calculateDrag' so that it returns the
+                        drag produced by an aircraft given the air density (rho), airspeed (v), plan form area of the
+                        wing (s)
+                        and the
+                        coefficient of drag (cd). </p>
+                    <table class="table">
+                        <tr>
+                            <th>Test Number</th>
+                            <th>Input</th>
+                            <th>Your Output</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="problem2-test-input-1">rho= , v= , s= , cl= </td>
+                            <td id="problem2-test-output-1">12</td>
+                            <td id="problem2-test-outcome-1">✅</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="problem2-test-input-2">rho= , v= , s= , cl= </td>
+                            <td id="problem2-test-output-2">34</td>
+                            <td id="problem2-test-outcome-2">✅</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="problem2-test-input-3">rho= , v= , s= , cl= </td>
+                            <td id="problem2-test-output-3">20</td>
+                            <td id="problem2-test-outcome-3">✅</td>
+                        </tr>
+                    </table>
+                    <button id="problem2-test-btn" class="btn btn-success">Test Problem 2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM 3 SECTION -->
+    <section>
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <h2>Problem 3: Calculate Stall Speed</h2>
+                    <p>In the file <b>logic.js</b> file, complete the function 'calculateStallSpeed' so that it returns
+                        the
+                        stall speed of an aircraft given the aircraft mass (m), gravitational acceleration (g), plan
+                        form area of the
+                        wing (s), the
+                        coefficient of lift (cl) and the air density (rho). </p>
+                    <table class="table">
+                        <tr>
+                            <th>Test Number</th>
+                            <th>Input</th>
+                            <th>Your Output</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="problem3-test-input-1">rho= , v= , s= , cl= </td>
+                            <td id="problem3-test-output-1">12</td>
+                            <td id="problem3-test-outcome-1">✅</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="problem3-test-input-2">rho= , v= , s= , cl= </td>
+                            <td id="problem3-test-output-2">34</td>
+                            <td id="problem3-test-outcome-2">✅</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="problem3-test-input-3">rho= , v= , s= , cl= </td>
+                            <td id="problem3-test-output-3">20</td>
+                            <td id="problem3-test-outcome-3">✅</td>
+                        </tr>
+                    </table>
+                    <button id="problem3-test-btn" class="btn btn-success">Test Problem 2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+    <script src="connectors.js"></script>
+</body>
+
+</html>
