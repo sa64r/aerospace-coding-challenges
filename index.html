@@ -37,7 +37,7 @@
                     <table class="table">
                         <tr>
                             <th>Test Number</th>
-                            <th>Input</th>
+                            <th>Input (rho, v, s, cl)</th>
                             <th>Outcome</th>
                         </tr>
                         <tr>
@@ -76,7 +76,7 @@
                     <table class="table">
                         <tr>
                             <th>Test Number</th>
-                            <th>Input</th>
+                            <th>Input (rho, v, s, cd)</th>
                             <th>Outcome</th>
                         </tr>
                         <tr>
@@ -116,7 +116,7 @@
                     <table class="table">
                         <tr>
                             <th>Test Number</th>
-                            <th>Input</th>
+                            <th>Input (m, g, s, cl, rho)</th>
                             <th>Outcome</th>
                         </tr>
                         <tr>
@@ -135,12 +135,50 @@
                             <td id="problem3-test-outcome-3">✅</td>
                         </tr>
                     </table>
-                    <button id="problem3-test-btn" class="btn btn-success">Test Problem 2</button>
+                    <button id="problem3-test-btn" class="btn btn-success">Test Problem 3</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- PROBLEM 4 SECTION -->
+    <section>
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <h2>Problem 4: Determining Flow Type</h2>
+                    <p>There are multiple readings of the reynolds number of the flow over a flat plate, and you need to
+                        return an array of values denoting whether that reading indicates a laminar, or turbulent flow.
+                    </p>
+                    <p>Assume if 0 < Re <=5x10^5 the flow is laminar but if 5x10^5 < Re < 10^7 the flow is turbulent.
+                            </p>
+                            <table class="table">
+                                <tr>
+                                    <th>Test Number</th>
+                                    <th>Input</th>
+                                    <th>Outcome</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td id="problem4-test-input-1">rho= , v= , s= , cl= </td>
+                                    <td id="problem4-test-outcome-1">✅</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td id="problem4-test-input-2">rho= , v= , s= , cl= </td>
+                                    <td id="problem4-test-outcome-2">✅</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td id="problem4-test-input-3">rho= , v= , s= , cl= </td>
+                                    <td id="problem4-test-outcome-3">✅</td>
+                                </tr>
+                            </table>
+                            <button id="problem4-test-btn" class="btn btn-success">Test Problem 4</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

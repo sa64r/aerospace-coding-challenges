@@ -51,6 +51,18 @@ function problem3() {
     renderTable(inputs, outputs, problemNumber, calculateStallSpeed);
 }
 
+function problem4() {
+    const problemNumber = 4;
+    let inputs = [
+
+    ]
+
+    let outputs = inputs.map(input => Math.sqrt(2 * input[0] * input[1] / (input[4] * input[2] * input[3])));
+
+    renderTable(inputs, outputs, problemNumber, determineFlowType);
+}
+
+
 function main() {
     problem1();
     problem2();
