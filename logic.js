@@ -20,5 +20,11 @@ function calculateStallSpeed(m, g, s, cl, rho) {
     //write your code here
 
 
+}
+
+// PROBLEM 4
+function determineFlowType(reynoldsNumber) {
+    //write your code here
+
 
 }

@@ -51,10 +51,31 @@ function problem3() {
     renderTable(inputs, outputs, problemNumber, calculateStallSpeed);
 }
 
+function problem4() {
+    const problemNumber = 4;
+    let inputs = [
+        [5 * 10 ** 5],
+        [3 * 10 ** 6],
+        [0]
+    ]
+
+    let outputs = inputs.map(input => {
+        if (input > 0 && input <= 5 * 10 ** 5) {
+            return "Laminar";
+        } else if (input > 5 * 10 ** 5 && input < 1 * 10 ** 7) {
+            return "Turbulent";
+        } else return undefined
+    });
+
+    renderTable(inputs, outputs, problemNumber, determineFlowType);
+}
+
+
 function main() {
     problem1();
     problem2();
     problem3();
+    problem4()
 }
 
 
