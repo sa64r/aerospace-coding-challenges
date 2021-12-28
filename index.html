@@ -147,34 +147,37 @@
             <div class="row pt-4 pb-4">
                 <div class="col-md-12">
                     <h2>Problem 4: Determining Flow Type</h2>
-                    <p>There are multiple readings of the reynolds number of the flow over a flat plate, and you need to
-                        return an array of values denoting whether that reading indicates a laminar, or turbulent flow.
+                    <p>In the file logic.js file, complete the function 'determineFlowType' so the function returns the
+                        nature of the
+                        flow, given you have a specific Reynold's number of the flow over a
+                        flat plate.
                     </p>
-                    <p>Assume if 0 < Re <=5x10^5 the flow is laminar but if 5x10^5 < Re < 10^7 the flow is turbulent.
-                            </p>
-                            <table class="table">
-                                <tr>
-                                    <th>Test Number</th>
-                                    <th>Input</th>
-                                    <th>Outcome</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td id="problem4-test-input-1">rho= , v= , s= , cl= </td>
-                                    <td id="problem4-test-outcome-1">✅</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td id="problem4-test-input-2">rho= , v= , s= , cl= </td>
-                                    <td id="problem4-test-outcome-2">✅</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td id="problem4-test-input-3">rho= , v= , s= , cl= </td>
-                                    <td id="problem4-test-outcome-3">✅</td>
-                                </tr>
-                            </table>
-                            <button id="problem4-test-btn" class="btn btn-success">Test Problem 4</button>
+                    <p>Assume if 0 < Re <=5x10^5 the flow is laminar but if 5x10^5 < Re < 10^7 the flow is turbulent,
+                            else return <code>Undefined</code>.</p>
+                    </p>
+                    <table class="table">
+                        <tr>
+                            <th>Test Number</th>
+                            <th>Input</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="problem4-test-input-1">rho= , v= , s= , cl= </td>
+                            <td id="problem4-test-outcome-1">✅</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="problem4-test-input-2">rho= , v= , s= , cl= </td>
+                            <td id="problem4-test-outcome-2">✅</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="problem4-test-input-3">rho= , v= , s= , cl= </td>
+                            <td id="problem4-test-outcome-3">✅</td>
+                        </tr>
+                    </table>
+                    <button id="problem4-test-btn" class="btn btn-success">Test Problem 4</button>
                 </div>
             </div>
         </div>
