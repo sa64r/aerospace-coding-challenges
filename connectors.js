@@ -83,6 +83,19 @@ function problem5() {
     renderTable(inputs, outputs, problemNumber, obtainTemperature);
 }
 
+function problem6() {
+    const problemNumber = 6;
+    let inputs = [
+        [300, 325, 133.5, 136.5, 310],
+        [1450, 1500, 196.7, 198.3, 1499],
+        [100, 110, 99.6, 102.3, 105]
+    ]
+
+    let outputs = inputs.map(input => ((input[3] - input[2]) / (input[1] - input[0])) * (input[4] - input[0]) + input[2]);
+
+    renderTable(inputs, outputs, problemNumber, obtainTemperature);
+}
+
 
 function main() {
     problem1();
